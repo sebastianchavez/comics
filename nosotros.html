@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre nosotros · Comic Store</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          'comic-red': '#DC2626', 'comic-yellow': '#FBBF24',
+          'comic-blue': '#1E3A8A', 'comic-dark': '#0F172A'
+        }
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-50">
+<div id="app-header"></div>
+
+<!-- Hero -->
+<section class="comic-banner text-white py-16 md:py-24">
+  <div class="max-w-7xl mx-auto px-4 relative z-10 text-center">
+    <div class="inline-block bg-comic-yellow text-comic-dark px-3 py-1 rounded-full text-xs font-bold mb-4 border-2 border-comic-dark shadow-[2px_2px_0_#0F172A]">
+      DESDE 2015
+    </div>
+    <h1 class="font-comic text-5xl md:text-7xl mb-4">Sobre nosotros</h1>
+    <p class="text-xl max-w-2xl mx-auto text-white/90">
+      Somos más que una tienda. Somos fans que comparten su pasión por las historias que nos hacen soñar.
+    </p>
+  </div>
+</section>
+
+<!-- Nuestra Historia -->
+<section class="py-16 bg-white">
+  <div class="max-w-5xl mx-auto px-4">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <div class="inline-block bg-comic-red text-white px-3 py-1 rounded-full text-xs font-bold mb-3 border-2 border-comic-dark shadow-[2px_2px_0_#0F172A]">
+          NUESTRA HISTORIA
+        </div>
+        <h2 class="font-comic text-4xl mb-4 text-comic-dark">Una década de aventuras</h2>
+        <p class="text-gray-700 mb-4 leading-relaxed">
+          Comic Store nació en 2015 en un pequeño local del centro de Madrid, fundada por un grupo de amigos
+          que no encontraba dónde comprar sus cómics favoritos sin tener que pedirlos por correo.
+        </p>
+        <p class="text-gray-700 mb-4 leading-relaxed">
+          Lo que empezó como un mostrario de barritas se convirtió rápidamente en el refugio de coleccionistas,
+          lectores ocasionales y curiosos que querían descubrir nuevas historias. Hoy somos el punto de encuentro
+          de la comunidad comiquera en Madrid.
+        </p>
+        <p class="text-gray-700 leading-relaxed">
+          En 2020 dimos el salto al mundo digital, creando esta plataforma para llevar nuestras recomendaciones
+          y catálogo a cualquier rincón de España. Pero nuestra esencia sigue siendo la misma: <strong>compartir la pasión por las buenas historias</strong>.
+        </p>
+      </div>
+      <div class="relative">
+        <img src="https://picsum.photos/seed/store1/600/700" alt="Nuestra tienda" class="rounded-lg border-2 border-comic-dark shadow-[8px_8px_0_#DC2626]">
+        <div class="absolute -bottom-4 -right-4 bg-comic-yellow text-comic-dark px-4 py-2 rounded-lg border-2 border-comic-dark font-bold shadow-[4px_4px_0_#0F172A]">
+          +10 años
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Misión / Visión / Valores -->
+<section class="py-16">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="font-comic text-4xl md:text-5xl text-comic-dark mb-3">Lo que nos define</h2>
+      <p class="text-gray-600">Nuestros principios fundamentales</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="comic-card p-8 bg-white">
+        <div class="text-5xl mb-4">🎯</div>
+        <h3 class="font-comic text-2xl mb-3 text-comic-dark">Misión</h3>
+        <p class="text-gray-700">
+          Hacer accesible la mejor literatura gráfica del mundo, ofreciendo una experiencia de compra cercana
+          y un catálogo diverso para todos los gustos.
+        </p>
+      </div>
+      <div class="comic-card p-8 bg-comic-yellow">
+        <div class="text-5xl mb-4">👁️</div>
+        <h3 class="font-comic text-2xl mb-3 text-comic-dark">Visión</h3>
+        <p class="text-gray-700">
+          Ser la tienda de referencia para los amantes del cómic en España, reconocidos por nuestra curación,
+          atención al cliente y amor por el arte secuencial.
+        </p>
+      </div>
+      <div class="comic-card p-8 bg-comic-red text-white">
+        <div class="text-5xl mb-4">❤️</div>
+        <h3 class="font-comic text-2xl mb-3">Valores</h3>
+        <p class="text-white/90">
+          Pasión por las historias, honestidad con nuestros clientes, respeto por los creadores,
+          diversidad e inclusión en cada recomendación.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Línea de tiempo -->
+<section class="py-16 bg-comic-dark text-white">
+  <div class="max-w-5xl mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="font-comic text-4xl md:text-5xl mb-3 text-comic-yellow">Nuestra historia</h2>
+      <p class="text-gray-400">Los momentos clave que nos trajeron hasta aquí</p>
+    </div>
+    <div class="relative">
+      <div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-1 bg-comic-red"></div>
+      <div class="space-y-8">
+        <div class="relative flex flex-col md:flex-row items-start md:items-center gap-4 pl-12 md:pl-0">
+          <div class="absolute left-2 md:left-1/2 md:-translate-x-1/2 w-5 h-5 bg-comic-yellow rounded-full border-4 border-comic-dark"></div>
+          <div class="md:w-1/2 md:pr-12 md:text-right">
+            <div class="text-comic-yellow font-bold text-xl">2015</div>
+            <h3 class="font-bold text-lg mt-1">El comienzo</h3>
+            <p class="text-gray-400 text-sm mt-1">Abrimos nuestras puertas en un pequeño local de 30m² en Malasaña.</p>
+          </div>
+          <div class="md:w-1/2 md:pl-12"></div>
+        </div>
+        <div class="relative flex flex-col md:flex-row items-start md:items-center gap-4 pl-12 md:pl-0">
+          <div class="absolute left-2 md:left-1/2 md:-translate-x-1/2 w-5 h-5 bg-comic-yellow rounded-full border-4 border-comic-dark"></div>
+          <div class="md:w-1/2 md:pr-12"></div>
+          <div class="md:w-1/2 md:pl-12">
+            <div class="text-comic-yellow font-bold text-xl">2017</div>
+            <h3 class="font-bold text-lg mt-1">Primera expansión</h3>
+            <p class="text-gray-400 text-sm mt-1">Nos mudamos a un espacio más grande y añadimos merchandising.</p>
+          </div>
+        </div>
+        <div class="relative flex flex-col md:flex-row items-start md:items-center gap-4 pl-12 md:pl-0">
+          <div class="absolute left-2 md:left-1/2 md:-translate-x-1/2 w-5 h-5 bg-comic-yellow rounded-full border-4 border-comic-dark"></div>
+          <div class="md:w-1/2 md:pr-12 md:text-right">
+            <div class="text-comic-yellow font-bold text-xl">2020</div>
+            <h3 class="font-bold text-lg mt-1">Salto digital</h3>
+            <p class="text-gray-400 text-sm mt-1">Lanzamos nuestra tienda online para llegar a más lectores.</p>
+          </div>
+          <div class="md:w-1/2 md:pl-12"></div>
+        </div>
+        <div class="relative flex flex-col md:flex-row items-start md:items-center gap-4 pl-12 md:pl-0">
+          <div class="absolute left-2 md:left-1/2 md:-translate-x-1/2 w-5 h-5 bg-comic-yellow rounded-full border-4 border-comic-dark"></div>
+          <div class="md:w-1/2 md:pr-12"></div>
+          <div class="md:w-1/2 md:pl-12">
+            <div class="text-comic-yellow font-bold text-xl">2023</div>
+            <h3 class="font-bold text-lg mt-1">Comunidad</h3>
+            <p class="text-gray-400 text-sm mt-1">Más de 10.000 seguidores en redes y eventos mensuales.</p>
+          </div>
+        </div>
+        <div class="relative flex flex-col md:flex-row items-start md:items-center gap-4 pl-12 md:pl-0">
+          <div class="absolute left-2 md:left-1/2 md:-translate-x-1/2 w-5 h-5 bg-comic-yellow rounded-full border-4 border-comic-dark"></div>
+          <div class="md:w-1/2 md:pr-12 md:text-right">
+            <div class="text-comic-yellow font-bold text-xl">2025</div>
+            <h3 class="font-bold text-lg mt-1">Hoy</h3>
+            <p class="text-gray-400 text-sm mt-1">+2000 clientes satisfechos y seguimos creciendo.</p>
+          </div>
+          <div class="md:w-1/2 md:pl-12"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Equipo -->
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="text-center mb-12">
+      <div class="inline-block bg-comic-yellow text-comic-dark px-3 py-1 rounded-full text-xs font-bold mb-3 border-2 border-comic-dark shadow-[2px_2px_0_#0F172A]">
+        NUESTRO EQUIPO
+      </div>
+      <h2 class="font-comic text-4xl md:text-5xl text-comic-dark mb-3">Las caras detrás del mostrario</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">Un equipo de expertos y fans listos para ayudarte a descubrir tu próxima lectura favorita.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6" id="team-grid"></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-16">
+  <div class="max-w-4xl mx-auto px-4">
+    <div class="comic-card p-8 md:p-12 bg-comic-red text-white text-center">
+      <div class="text-5xl mb-4">📚</div>
+      <h2 class="font-comic text-3xl md:text-4xl mb-3">¿Listo para tu próxima lectura?</h2>
+      <p class="text-white/90 mb-6">Explora miles de historias en nuestro catálogo.</p>
+      <div class="flex flex-wrap justify-center gap-3">
+        <a href="productos.html" class="btn-comic btn-comic-yellow btn-comic-lg">Ver productos</a>
+        <a href="contacto.html" class="btn-comic btn-comic-outline btn-comic-lg">Contáctanos</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="app-footer"></div>
+
+<script src="js/data.js"></script>
+<script src="js/store.js"></script>
+<script src="js/helpers.js"></script>
+<script src="js/components.js"></script>
+<script>
+  Components.init('about');
+
+  // Render team
+  document.addEventListener('DOMContentLoaded', () => {
+    const grid = document.getElementById('team-grid');
+    if (!grid) return;
+    grid.innerHTML = MOCK_DATA.team.map(member => `
+      <div class="comic-card-flat overflow-hidden text-center group">
+        <div class="aspect-square overflow-hidden bg-gray-100">
+          <img src="${member.avatar}" alt="${member.name}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+        </div>
+        <div class="p-5">
+          <h3 class="font-bold text-lg">${member.name}</h3>
+          <p class="text-comic-red text-sm font-semibold mb-2">${member.role}</p>
+          <p class="text-gray-600 text-sm">${member.bio}</p>
+        </div>
+      </div>
+    `).join('');
+  });
+</script>
+</body>
+</html>

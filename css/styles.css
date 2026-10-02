@@ -1,0 +1,347 @@
+/* ============================================
+   Comic Store - Custom Styles
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --comic-red: #DC2626;
+  --comic-yellow: #FBBF24;
+  --comic-blue: #1E3A8A;
+  --comic-dark: #0F172A;
+  --comic-light: #F8FAFC;
+  --comic-gray: #64748B;
+}
+
+* { -webkit-tap-highlight-color: transparent; }
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #FAFAFA;
+  color: var(--comic-dark);
+}
+
+.font-comic { font-family: 'Bangers', cursive; letter-spacing: 1.5px; }
+.font-display { font-family: 'Bebas Neue', sans-serif; letter-spacing: 1.2px; }
+
+/* === Hero / Banner estilo cómic === */
+.comic-banner {
+  background: linear-gradient(135deg, var(--comic-red) 0%, #B91C1C 100%);
+  position: relative;
+  overflow: hidden;
+}
+.comic-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(255,255,255,0.15) 0%, transparent 25%),
+    radial-gradient(circle at 80% 70%, rgba(251,191,36,0.2) 0%, transparent 30%);
+  pointer-events: none;
+}
+.comic-banner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(0,0,0,0.05) 35px, rgba(0,0,0,0.05) 70px);
+  pointer-events: none;
+}
+
+/* === Burbuja de cómic === */
+.speech-bubble {
+  position: relative;
+  background: white;
+  border: 3px solid var(--comic-dark);
+  border-radius: 20px;
+  padding: 1rem 1.25rem;
+  box-shadow: 4px 4px 0 var(--comic-dark);
+}
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -18px;
+  left: 30px;
+  width: 0; height: 0;
+  border-left: 18px solid transparent;
+  border-right: 0 solid transparent;
+  border-top: 18px solid white;
+}
+.speech-bubble::before {
+  content: '';
+  position: absolute;
+  bottom: -25px;
+  left: 28px;
+  width: 0; height: 0;
+  border-left: 21px solid transparent;
+  border-right: 0 solid transparent;
+  border-top: 21px solid var(--comic-dark);
+  z-index: -1;
+}
+
+/* === Tarjetas con sombra estilo cómic === */
+.comic-card {
+  background: white;
+  border: 3px solid var(--comic-dark);
+  border-radius: 12px;
+  box-shadow: 6px 6px 0 var(--comic-dark);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.comic-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0 var(--comic-dark);
+}
+.comic-card-flat {
+  background: white;
+  border: 2px solid #E2E8F0;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+.comic-card-flat:hover {
+  border-color: var(--comic-red);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
+}
+
+/* === Botón estilo cómic === */
+.btn-comic {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--comic-red);
+  color: white;
+  font-weight: 700;
+  border: 3px solid var(--comic-dark);
+  border-radius: 8px;
+  box-shadow: 4px 4px 0 var(--comic-dark);
+  transition: all 0.15s ease;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.875rem;
+}
+.btn-comic:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--comic-dark);
+}
+.btn-comic:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 var(--comic-dark);
+}
+.btn-comic:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.btn-comic-yellow { background: var(--comic-yellow); color: var(--comic-dark); }
+.btn-comic-blue { background: var(--comic-blue); }
+.btn-comic-outline { background: white; color: var(--comic-dark); }
+.btn-comic-ghost { background: transparent; box-shadow: none; border: 2px solid var(--comic-dark); }
+.btn-comic-ghost:hover { box-shadow: 3px 3px 0 var(--comic-dark); }
+.btn-comic-sm { padding: 0.5rem 1rem; font-size: 0.75rem; border-width: 2px; box-shadow: 2px 2px 0 var(--comic-dark); }
+.btn-comic-sm:hover { box-shadow: 3px 3px 0 var(--comic-dark); }
+.btn-comic-lg { padding: 1rem 2rem; font-size: 1rem; box-shadow: 5px 5px 0 var(--comic-dark); }
+.btn-comic-lg:hover { box-shadow: 7px 7px 0 var(--comic-dark); }
+
+/* === Estrellas === */
+.star { color: #D1D5DB; cursor: pointer; transition: color 0.15s; }
+.star.filled, .star:hover, .star:hover ~ .star { color: var(--comic-yellow); }
+.star-rating .star { display: inline-block; }
+.star-rating-interactive .star:hover ~ .star { color: #D1D5DB; }
+
+/* === Toast === */
+.toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: calc(100vw - 40px);
+}
+.toast {
+  background: white;
+  border: 2px solid var(--comic-dark);
+  border-radius: 8px;
+  padding: 12px 16px;
+  box-shadow: 4px 4px 0 var(--comic-dark);
+  min-width: 280px;
+  max-width: 380px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  animation: slideInRight 0.3s ease, fadeOut 0.3s ease 2.7s forwards;
+  font-size: 0.875rem;
+}
+.toast.success { border-color: #10B981; }
+.toast.error { border-color: var(--comic-red); }
+.toast.info { border-color: var(--comic-blue); }
+@keyframes slideInRight {
+  from { transform: translateX(120%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+@keyframes fadeOut {
+  to { transform: translateX(120%); opacity: 0; }
+}
+
+/* === Modal === */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.7);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  animation: fadeIn 0.2s ease;
+}
+.modal-content {
+  background: white;
+  border: 3px solid var(--comic-dark);
+  border-radius: 12px;
+  box-shadow: 8px 8px 0 var(--comic-dark);
+  max-width: 500px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  animation: scaleIn 0.2s ease;
+}
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes scaleIn { from { transform: scale(0.9); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+
+/* === Input === */
+.input-comic {
+  width: 100%;
+  padding: 0.65rem 0.9rem;
+  border: 2px solid #CBD5E1;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: all 0.15s;
+  background: white;
+}
+.input-comic:focus {
+  outline: none;
+  border-color: var(--comic-red);
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.15);
+}
+.input-comic.error {
+  border-color: var(--comic-red);
+  background: #FEF2F2;
+}
+
+/* === Badge === */
+.badge-cart {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: var(--comic-yellow);
+  color: var(--comic-dark);
+  font-size: 0.7rem;
+  font-weight: 800;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--comic-dark);
+}
+
+/* === Estado badges === */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.status-pendiente { background: #FEF3C7; color: #92400E; }
+.status-enviado { background: #DBEAFE; color: #1E40AF; }
+.status-entregado { background: #D1FAE5; color: #065F46; }
+.status-cancelado { background: #FEE2E2; color: #991B1B; }
+
+/* === Header sticky === */
+.site-header {
+  background: white;
+  border-bottom: 3px solid var(--comic-dark);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+/* === Nav link === */
+.nav-link {
+  position: relative;
+  font-weight: 600;
+  color: var(--comic-dark);
+  padding: 0.5rem 0.75rem;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: var(--comic-red); }
+.nav-link.active { color: var(--comic-red); }
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0.75rem;
+  right: 0.75rem;
+  height: 3px;
+  background: var(--comic-red);
+  border-radius: 2px;
+}
+
+/* === Animaciones === */
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.animate-pop {
+  animation: pop 0.3s ease;
+}
+@keyframes pop {
+  0% { transform: scale(0.8); opacity: 0; }
+  60% { transform: scale(1.1); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* === Custom scrollbar === */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: #F1F5F9; }
+::-webkit-scrollbar-thumb { background: var(--comic-dark); border-radius: 5px; }
+::-webkit-scrollbar-thumb:hover { background: #334155; }
+
+/* === Print === */
+@media print {
+  .no-print, .site-header, footer, .btn-comic, .comic-banner::after { display: none !important; }
+  body { background: white; }
+  .comic-card, .comic-card-flat { box-shadow: none; border: 1px solid #ccc; }
+  .print-only { display: block !important; }
+}
+.print-only { display: none; }
+
+/* === Loading skeleton === */
+.skeleton {
+  background: linear-gradient(90deg, #E2E8F0 0%, #F1F5F9 50%, #E2E8F0 100%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s infinite;
+  border-radius: 6px;
+}
+@keyframes skeleton-loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* === Util === */
+.divider-comic {
+  height: 4px;
+  background: repeating-linear-gradient(90deg, var(--comic-dark) 0, var(--comic-dark) 12px, transparent 12px, transparent 20px, var(--comic-red) 20px, var(--comic-red) 32px, transparent 32px, transparent 40px);
+}

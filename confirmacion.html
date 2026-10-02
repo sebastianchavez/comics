@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pedido confirmado · Comic Store</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          'comic-red': '#DC2626', 'comic-yellow': '#FBBF24',
+          'comic-blue': '#1E3A8A', 'comic-dark': '#0F172A'
+        }
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-50">
+<div id="app-header"></div>
+
+<section class="bg-green-100 py-8 print:hidden">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex items-center gap-2 text-sm">
+      <a href="index.html" class="hover:underline">Inicio</a>
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      <a href="carrito.html" class="hover:underline">Carrito</a>
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      <a href="checkout.html" class="hover:underline">Checkout</a>
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      <span class="font-bold">Confirmación</span>
+    </div>
+  </div>
+</section>
+
+<section class="py-12">
+  <div class="max-w-7xl mx-auto px-4">
+    <p class="print-only text-center text-2xl font-bold mb-4">Comprobante de pedido · <span id="order-id-display"></span></p>
+    <div id="confirmation-content"></div>
+  </div>
+</section>
+
+<div id="app-footer"></div>
+
+<script src="js/data.js"></script>
+<script src="js/store.js"></script>
+<script src="js/helpers.js"></script>
+<script src="js/components.js"></script>
+<script src="js/pages/confirmation.js"></script>
+</body>
+</html>

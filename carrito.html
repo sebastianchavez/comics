@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carrito · Comic Store</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          'comic-red': '#DC2626', 'comic-yellow': '#FBBF24',
+          'comic-blue': '#1E3A8A', 'comic-dark': '#0F172A'
+        }
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-50">
+<div id="app-header"></div>
+
+<section class="bg-comic-dark text-white py-8">
+  <div class="max-w-7xl mx-auto px-4">
+    <h1 class="font-comic text-4xl md:text-5xl">Carrito de compras</h1>
+    <p class="text-white/70 mt-1">Revisa tus productos antes de finalizar la compra</p>
+  </div>
+</section>
+
+<section class="py-12">
+  <div class="max-w-7xl mx-auto px-4">
+    <div id="cart-content"></div>
+  </div>
+</section>
+
+<div id="app-footer"></div>
+
+<script src="js/data.js"></script>
+<script src="js/store.js"></script>
+<script src="js/helpers.js"></script>
+<script src="js/components.js"></script>
+<script src="js/pages/cart.js"></script>
+</body>
+</html>

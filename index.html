@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comic Store · Inicio</title>
+<meta name="description" content="Tu tienda de cómics, manga, novelas gráficas y merchandising. Las mejores aventuras a un clic.">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          'comic-red': '#DC2626',
+          'comic-yellow': '#FBBF24',
+          'comic-blue': '#1E3A8A',
+          'comic-dark': '#0F172A',
+          'comic-gray': '#64748B'
+        }
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-50">
+<div id="app-header"></div>
+
+<section id="benefits"></section>
+<section id="hero"></section>
+<section id="categories"></section>
+<section id="featured"></section>
+<section id="promo"></section>
+<section id="newsletter"></section>
+
+<div id="app-footer"></div>
+
+<script src="js/data.js"></script>
+<script src="js/store.js"></script>
+<script src="js/helpers.js"></script>
+<script src="js/components.js"></script>
+<script src="js/pages/home.js"></script>
+</body>
+</html>
