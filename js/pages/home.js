@@ -43,7 +43,7 @@
                   <span class="text-comic-yellow text-2xl">🚚</span>
                   <div>
                     <div class="font-bold">Envío 24/48h</div>
-                    <div class="text-white/70 text-xs">Gratis +$50</div>
+                    <div class="text-white/70 text-xs">Gratis +$50.000</div>
                   </div>
                 </div>
                 <div class="flex items-center gap-2">
@@ -131,7 +131,7 @@
                 🎁 OFERTA ESPECIAL
               </div>
               <h2 class="font-comic text-4xl md:text-6xl mb-4">25% OFF</h2>
-              <p class="text-xl mb-2">en compras mayores a $100</p>
+              <p class="text-xl mb-2">en compras mayores a $100.000</p>
               <p class="text-white/80 mb-6">Usa el código <span class="bg-white text-comic-blue font-bold px-3 py-1 rounded">COMICS25</span> al finalizar tu compra</p>
               <a href="productos.html" class="btn-comic btn-comic-yellow btn-comic-lg">
                 Aprovechar oferta
@@ -170,7 +170,7 @@
     const container = document.getElementById('benefits');
     if (!container) return;
     const items = [
-      { icon: '🚚', title: 'Envío rápido', desc: '24/48h en toda España' },
+      { icon: '🚚', title: 'Envío rápido', desc: '24/48h en toda Chile' },
       { icon: '🔒', title: 'Pago 100% seguro', desc: 'Transacciones encriptadas' },
       { icon: '↩️', title: 'Devolución gratis', desc: '30 días para cambios' },
       { icon: '💬', title: 'Soporte 24/7', desc: 'Atención personalizada' }

@@ -6,18 +6,18 @@ const Helpers = (() => {
 
   // ===== Formatting =====
   function formatPrice(amount) {
-    return new Intl.NumberFormat('es-ES', { style: 'currency', currency: 'USD' }).format(amount);
+    return new Intl.NumberFormat('es-CL', { style: 'currency', currency: 'CLP', maximumFractionDigits: 0 }).format(amount);
   }
   function formatDate(dateStr) {
     const d = new Date(dateStr);
-    return d.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' });
+    return d.toLocaleDateString('es-CL', { year: 'numeric', month: 'long', day: 'numeric' });
   }
   function formatDateShort(dateStr) {
     const d = new Date(dateStr);
-    return d.toLocaleDateString('es-ES', { year: 'numeric', month: '2-digit', day: '2-digit' });
+    return d.toLocaleDateString('es-CL', { year: 'numeric', month: '2-digit', day: '2-digit' });
   }
   function formatNumber(n) {
-    return new Intl.NumberFormat('es-ES').format(n);
+    return new Intl.NumberFormat('es-CL').format(n);
   }
 
   // ===== Validation =====

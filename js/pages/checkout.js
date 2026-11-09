@@ -6,9 +6,9 @@
   Components.init('products');
 
   const SHIPPING_METHODS = [
-    { id: 'standard', name: 'Estándar', desc: '2-3 días laborables', price: 4.99 },
-    { id: 'express', name: 'Express', desc: '24 horas', price: 6.99 },
-    { id: 'pickup', name: 'Recogida en tienda', desc: 'Gratis · Calle Mayor 123, Madrid', price: 0 }
+    { id: 'standard', name: 'Estándar', desc: '2-3 días laborables', price: 4990 },
+    { id: 'express', name: 'Express', desc: '24 horas', price: 6990 },
+    { id: 'pickup', name: 'Recogida en tienda', desc: 'Gratis · Av. Providencia 123, Santiago', price: 0 }
   ];
 
   const PAYMENT_METHODS = [
@@ -79,7 +79,7 @@
                 </div>
                 <div class="sm:col-span-2">
                   <label class="block text-sm font-semibold mb-1">Calle y número *</label>
-                  <input type="text" name="street" required value="${user?.address?.street || ''}" class="input-comic" placeholder="Calle Mayor 123">
+                  <input type="text" name="street" required value="${user?.address?.street || ''}" class="input-comic" placeholder="Av. Providencia 123">
                 </div>
                 <div>
                   <label class="block text-sm font-semibold mb-1">Ciudad *</label>
@@ -96,7 +96,7 @@
                 <div>
                   <label class="block text-sm font-semibold mb-1">País *</label>
                   <select name="country" required class="input-comic">
-                    <option ${(!user?.address?.country || user.address.country === 'España') ? 'selected' : ''}>España</option>
+                    <option ${(!user?.address?.country || user.address.country === 'Chile') ? 'selected' : ''}>Chile</option>
                     <option ${user?.address?.country === 'Portugal' ? 'selected' : ''}>Portugal</option>
                     <option ${user?.address?.country === 'Francia' ? 'selected' : ''}>Francia</option>
                     <option ${user?.address?.country === 'Italia' ? 'selected' : ''}>Italia</option>
@@ -220,7 +220,7 @@
     useDifferentAddress() { state.useAccountAddress = false; render(); },
     formatCard(input) {
       let v = input.value.replace(/\D/g, '').substring(0, 16);
-      input.value = v.replace(/(.{4})/g, '$1 ').trim();
+      input.value = v.replace(/(.{4})/g, '$1.000 ').trim();
     },
     formatExpiry(input) {
       let v = input.value.replace(/\D/g, '').substring(0, 4);

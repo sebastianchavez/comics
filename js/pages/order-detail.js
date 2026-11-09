@@ -119,7 +119,7 @@
                   <p class="text-sm text-gray-700">${order.address.state}, ${order.address.country}</p>
                 ` : `
                   <p class="font-semibold">Recogida en tienda</p>
-                  <p class="text-sm text-gray-700 mt-1">Calle Mayor 123, Madrid</p>
+                  <p class="text-sm text-gray-700 mt-1">Av. Providencia 123, Santiago</p>
                   <p class="text-sm text-gray-500">Disponible en 24h</p>
                 `}
                 ${order.tracking ? `

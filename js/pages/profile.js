@@ -144,7 +144,7 @@
                       </div>
                       <div>
                         <label class="block text-sm font-semibold mb-1">País</label>
-                        <input type="text" name="country" value="${user.address?.country || 'España'}" class="input-comic">
+                        <input type="text" name="country" value="${user.address?.country || 'Chile'}" class="input-comic">
                       </div>
                     </div>
                   </div>

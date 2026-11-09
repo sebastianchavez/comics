@@ -107,7 +107,7 @@
 
           <!-- Meta -->
           <div class="space-y-2 text-sm border-t-2 border-gray-100 pt-4">
-            <p class="flex items-center gap-2"><span>📦</span><span>Envío gratis en pedidos +$50</span></p>
+            <p class="flex items-center gap-2"><span>📦</span><span>Envío gratis en pedidos +$50.000</span></p>
             <p class="flex items-center gap-2"><span>↩️</span><span>Devolución gratis 30 días</span></p>
             <p class="flex items-center gap-2"><span>🔒</span><span>Pago 100% seguro</span></p>
           </div>
@@ -259,21 +259,21 @@
             <span class="text-2xl">🚚</span>
             <div>
               <h4 class="font-bold">Envío estándar (2-3 días)</h4>
-              <p class="text-sm text-gray-600">Gratis en compras superiores a $50. Costo: $4.99</p>
+              <p class="text-sm text-gray-600">Gratis en compras superiores a $50.000. Costo: $4.990</p>
             </div>
           </div>
           <div class="flex items-start gap-3 p-4 comic-card-flat">
             <span class="text-2xl">⚡</span>
             <div>
               <h4 class="font-bold">Envío express (24h)</h4>
-              <p class="text-sm text-gray-600">Recibe tu pedido al día siguiente. Costo: $6.99</p>
+              <p class="text-sm text-gray-600">Recibe tu pedido al día siguiente. Costo: $6.990</p>
             </div>
           </div>
           <div class="flex items-start gap-3 p-4 comic-card-flat">
             <span class="text-2xl">🏪</span>
             <div>
               <h4 class="font-bold">Recogida en tienda</h4>
-              <p class="text-sm text-gray-600">Pasa a recoger tu pedido por nuestra tienda en Madrid. Gratis.</p>
+              <p class="text-sm text-gray-600">Pasa a recoger tu pedido por nuestra tienda en Santiago. Gratis.</p>
             </div>
           </div>
         </div>

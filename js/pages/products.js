@@ -28,10 +28,10 @@
       );
     }
     if (state.priceRange !== 'all') {
-      if (state.priceRange === '0-15') list = list.filter(p => p.price < 15);
-      else if (state.priceRange === '15-25') list = list.filter(p => p.price >= 15 && p.price < 25);
-      else if (state.priceRange === '25-50') list = list.filter(p => p.price >= 25 && p.price < 50);
-      else if (state.priceRange === '50+') list = list.filter(p => p.price >= 50);
+      if (state.priceRange === '0-15') list = list.filter(p => p.price < 15000);
+      else if (state.priceRange === '15-25') list = list.filter(p => p.price >= 15000 && p.price < 25000);
+      else if (state.priceRange === '25-50') list = list.filter(p => p.price >= 25000 && p.price < 50000);
+      else if (state.priceRange === '50+') list = list.filter(p => p.price >= 50000);
     }
     switch (state.sort) {
       case 'price-asc': list.sort((a, b) => a.price - b.price); break;
@@ -121,10 +121,10 @@
         <ul class="space-y-2">
           ${[
             { v: 'all', label: 'Todos los precios' },
-            { v: '0-15', label: 'Menos de $15' },
-            { v: '15-25', label: '$15 - $25' },
-            { v: '25-50', label: '$25 - $50' },
-            { v: '50+', label: 'Más de $50' }
+            { v: '0-15', label: 'Menos de $15.000' },
+            { v: '15-25', label: '$15.000 - $25.000' },
+            { v: '25-50', label: '$25.000 - $50.000' },
+            { v: '50+', label: 'Más de $50.000' }
           ].map(p => `
             <li>
               <label class="flex items-center gap-2 cursor-pointer">

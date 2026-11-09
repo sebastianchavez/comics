@@ -31,7 +31,7 @@
                   </div>
                   <div>
                     <label class="block text-sm font-semibold mb-1">Teléfono</label>
-                    <input type="tel" name="phone" class="input-comic" placeholder="+34 600 000 000">
+                    <input type="tel" name="phone" class="input-comic" placeholder="+56 9 8765 4321">
                   </div>
                   <div>
                     <label class="block text-sm font-semibold mb-1">Asunto *</label>
@@ -81,8 +81,8 @@
                   <svg class="w-5 h-5 text-comic-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
                   Ubicación
                 </h3>
-                <p class="text-sm text-gray-700 mb-3">Calle Mayor 123<br>28013 Madrid, España</p>
-                <a href="https://www.google.com/maps/search/?api=1&query=Calle+Mayor+123+Madrid" target="_blank" class="btn-comic btn-comic-outline btn-comic-sm w-full">
+                <p class="text-sm text-gray-700 mb-3">Av. Providencia 123<br>7500000 Santiago, Chile</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=Av.+Providencia+123+Santiago+Chile" target="_blank" class="btn-comic btn-comic-outline btn-comic-sm w-full">
                   Ver en mapa
                 </a>
               </div>
@@ -93,9 +93,9 @@
                   Contacto directo
                 </h3>
                 <ul class="space-y-2 text-sm">
-                  <li><strong>Teléfono:</strong> +34 912 345 678</li>
-                  <li><strong>Email:</strong> hola@comicstore.com</li>
-                  <li><strong>WhatsApp:</strong> +34 612 345 678</li>
+                  <li><strong>Teléfono:</strong> +56 2 2345 6789</li>
+                  <li><strong>Email:</strong> hola@comicstore.cl</li>
+                  <li><strong>WhatsApp:</strong> +56 9 8765 4321</li>
                 </ul>
               </div>
 
@@ -133,8 +133,8 @@
               ${[
                 { q: '¿Cuánto tarda en llegar mi pedido?', a: 'Los pedidos se procesan en 24h. El envío estándar tarda entre 2-3 días laborables. El expresso llega en 24h.' },
                 { q: '¿Puedo devolver un producto?', a: 'Sí, tienes 30 días para devolver cualquier producto en su estado original sin abrir. Te reembolsamos el 100%.' },
-                { q: '¿Hacen envíos internacionales?', a: 'Por ahora solo enviamos a España y Portugal. Estamos trabajando en ampliar a Europa.' },
-                { q: '¿Tienen tienda física?', a: 'Sí, nuestra tienda está en Calle Mayor 123, Madrid. Ven a visitarnos y descubre más de 5000 productos.' },
+                { q: '¿Hacen envíos internacionales?', a: 'Por ahora solo enviamos a Chile y Portugal. Estamos trabajando en ampliar nuestra cobertura.' },
+                { q: '¿Tienen tienda física?', a: 'Sí, nuestra tienda está en Av. Providencia 123, Santiago. Ven a visitarnos y descubre más de 5000 productos.' },
                 { q: '¿Cómo puedo saber si un cómic está disponible?', a: 'Todos los productos en la web tienen stock en tiempo real. Si ves "Sin stock", podemos avisarte cuando llegue.' }
               ].map((f, i) => `
                 <details class="comic-card-flat p-4 group">

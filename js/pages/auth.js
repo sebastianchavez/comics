@@ -45,7 +45,7 @@ const AuthPages = (() => {
 
     // Quick login button
     document.getElementById('quick-login')?.addEventListener('click', () => {
-      document.querySelector('#login-form [name="email"]').value = 'demo@comics.com';
+      document.querySelector('#login-form [name="email"]').value = 'demo@comics.cl';
       document.querySelector('#login-form [name="password"]').value = '123456';
       Helpers.toast('Credenciales demo cargadas', 'info');
     });
@@ -78,7 +78,7 @@ const AuthPages = (() => {
           city: form.city.value.trim(),
           state: form.state.value.trim(),
           zip: form.zip.value.trim(),
-          country: form.country.value || 'España'
+          country: form.country.value || 'Chile'
         }
       };
 
